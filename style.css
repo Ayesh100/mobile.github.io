@@ -1,0 +1,886 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(17, 10, 44);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    width: 120px;
+    height: 35px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.navigation ul li a:hover {
+    color: rgb(117, 165, 184);
+}
+
+.menu-button,
+.close-button {
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    border: solid 2px white;
+    display: none;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom right, rgb(133, 133, 197), rgb(133, 133, 182), rgb(71, 79, 150), rgb(50, 58, 126), rgb(50, 58, 126), rgb(59, 68, 134), rgb(56, 113, 136), rgb(106, 191, 224), rgb(106, 191, 224));
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    padding: 70px 0px;
+}
+
+.intro {
+    width: 400px;
+    text-align: start;
+}
+
+.main {
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.sub {
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.phone {
+    border-radius: 20px;
+    height: 430px;
+    width: 200px;
+    background-image: url(phone.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 9px black;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.first {
+    width: 500px;
+}
+
+.heading {
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.second {
+    width: 350px;
+}
+
+.second h2 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.second p {
+    font-weight: lighter;
+    word-spacing: 5px;
+    font-size: 15px;
+}
+
+
+.btn {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 25px;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: darkcyan;
+    border: solid 1px darkcyan;
+    color: white;
+}
+
+.features {
+    background-image: linear-gradient(to bottom right, rgb(133, 133, 197), rgb(133, 133, 182), rgb(71, 79, 150), rgb(50, 58, 126), rgb(50, 58, 126), rgb(59, 68, 134), rgb(49, 52, 189), rgb(49, 52, 189));
+    margin-top: 70px;
+    padding: 50px;
+    color: white;
+}
+
+.features-items {
+    display: flex;
+    gap: 80px;
+    font-weight: lighter;
+    margin-top: 100px;
+    text-align: start;
+}
+.feature-cards{
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 7px;
+}
+.icon {
+    width: 30px;
+    height: 40px;
+}
+
+.features-items h2 {
+    font-size: 25px;
+    width: 170px;
+}
+
+.work {
+    margin-top: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.app-works {
+    display: flex;
+    gap: 200px;
+}
+
+.app-works .phone {
+    width: 250px;
+    height: 550px;
+}
+
+.app-works h1 {
+    margin-top: 50px;
+}
+
+.app-works h2 {
+    font-weight: lighter;
+    width: 200px;
+}
+
+.app-works p {
+    width: 290px;
+    font-size: 18px;
+    font-weight: lighter;
+    word-spacing: 3px;
+}
+
+.app-works h2:nth-child(2) {
+    margin-top: 50px;
+    flex-direction: row-reverse;
+}
+
+.app-works:nth-child(2) {
+    margin-top: 150px;
+    gap: 80px;
+}
+
+.phone2 {
+    background-image: url(phone\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+    height: 270px;
+    border: solid 9px black;
+    border-radius: 20px;
+}
+.story, .forms{
+    background-image: linear-gradient(to bottom right, rgb(133, 133, 197), rgb(133, 133, 182), rgb(71, 79, 150), rgb(50, 58, 126), rgb(50, 58, 126), rgb(59, 68, 134), rgb(56, 113, 136), rgb(106, 191, 224), rgb(106, 191, 224));
+    margin-top: 100px;
+}
+.flexbox-story, .flexbox-form{
+    display: flex;
+    gap: 100px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.flexbox-story .second h2{
+    margin-top: 100px;
+}
+.flexbox-story h1{
+    font-size: 50px;
+    font-weight: lighter;
+}
+.flexbox-story h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.flexbox-story p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.review{
+    width: 50px;
+    height: 40px;
+    color: darkcyan;
+}
+.card{
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px lightgrey;
+    padding: 10px 15px;
+}
+.customers .features-items{
+    gap: 10px;
+}
+.customers .container{
+    width: 70%;
+}
+.customers .container h1{
+    width: 200px;
+}
+.form{
+    display: flex;
+    gap: 10px;
+}
+.form .second{
+    margin-top: 40px;
+}
+.form:nth-child(3){
+    margin-top: 40px;
+}
+.flexbox-form{
+    padding-bottom: 100px;
+}
+input{
+    background: transparent;
+    border-bottom: solid 1px white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: white;
+    caret-color: white;
+    margin-top: 35px;
+    font-size: 17px;
+    height: 50px;
+}
+input:hover{
+    border-bottom: solid 2px white;
+}
+.textarea{
+    background: transparent;
+    border-bottom: solid 1px white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: white;
+    caret-color: white;
+    resize: none;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.textarea:hover{
+    border-bottom: solid 2px white;
+}
+.message{
+    margin-top: 30px;
+}
+.email{
+    width: 450px;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.btn2:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color: rgb(17, 10, 44);
+    color: white;
+}
+.footer-flex:nth-child(2){
+    margin-top: 30px;
+}
+.footer-container{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    padding: 40px;
+    font-weight: lighter;
+    justify-content: space-between;
+}
+.secondbox{
+    margin-top: 60px;
+}
+.secondbox h4{
+    margin-top: 50px;
+}
+.social{
+    width: 35px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.footer-flex{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.reveal{
+    
+    opacity: 0;
+    transition: 2.5s;
+}
+.show{
+    opacity: 1;
+}
+@media (max-width:1150px){
+    .flexbox-form{
+        gap: 20px;
+    }
+    .flexbox-form .first{
+        width: 400px;
+    }
+}
+@media (max-width: 1032px) {
+    .app-works:nth-child(2) {
+        gap: 15px;
+    }
+    .flexbox-story{
+        display: flex;
+    }
+    .flexbox-story h1{
+        text-align: center;
+    }
+}
+
+@media (max-width:980px) {
+    .logo {
+        width: 150px;
+        height: 45px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(17, 10, 44);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .active .navigation {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .close-button {
+        display: block;
+    }
+
+    .active .menu-button {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li a {
+        font-size: 25px;
+    }
+
+    .menu-button {
+        display: block;
+        z-index: 999;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 40px 0px 70px 0px;
+    }
+
+    .intro {
+        width: 70%;
+    }
+
+    .phone {
+        width: 250px;
+        height: 490px;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .first {
+        width: auto;
+        text-align: center;
+    }
+
+    .second {
+        text-align: center;
+        width: auto;
+    }
+
+    .second h2 {
+        font-size: 30px;
+    }
+
+    .second p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .features p {
+        text-align: start;
+    }
+
+    .app-works {
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexbox-story{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .flexbox-story .second h2{
+        margin-top: 0px;
+    }
+    .flexbox-story .second p{
+        width: 70%;
+        margin: 50px auto;
+        font-size: 20px;
+    }
+    .flexbox-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexbox-form .first, .flexbox-form .second{
+        width: 70%;
+        margin: 50px auto;
+    }
+    input{
+        width: 350px;
+        font-size: 17px;
+    }
+    input[type="email"]{
+        width: 700px;
+        font-size: 17px;
+    }
+    .textarea{
+        width: 700px;
+    }
+    .btn2{
+        width: 70%;
+        margin-left: 30px;
+    }
+}
+@media (max-width:900px){
+    .flexbox-form{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    .flexbox-form .second{
+        margin: 0px 0px 0px 100px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+@media (max-width:850px) {
+    .features-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn2{
+        margin-left: 60px;
+    }
+    .features-items h2 {
+        width: 100%;
+    }
+
+    .features-items p {
+        font-size: 20px;
+    }
+
+    .app-works {
+        flex-direction: column;
+    }
+
+    .app-works:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .app-works h2,
+    .app-works h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .app-works h2 {
+        font-size: 30px;
+    }
+
+    .app-works p {
+        font-size: 25px;
+        width: 70%;
+        margin: 50px auto;
+    }
+    .flexbox-form .second{
+        margin: 0px 0px 0px 50px;
+}
+}
+@media (max-width: 800px){
+    input{
+        width: 300px;
+    }
+    input[type="email"]{
+        width: 600px;
+    }
+    .textarea{
+        width: 600px;
+    }
+}
+@media (max-width: 687px){
+    input{
+        width: 250px;
+    }
+    input[type="email"]{
+        width: 500px;
+    }
+    .textarea{
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .header {
+        padding: 15px 15px;
+    }
+
+    .menu-button,
+    .close-button {
+        width: 30;
+        height: 30px;
+    }
+
+    .banner {
+        padding: 70px 0px 50px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    .btn2{
+        margin-left: 60px;
+    }
+
+    .main {
+        font-size: 50px;
+    }
+
+    .phone {
+        width: 230px;
+        height: 450px;
+    }
+
+    .download {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+    .second h2{
+        font-size: 24px;
+    }
+    .second p {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .btn {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .features {
+        padding: 40px 5px 40px 20px;
+    }
+    .features-items p{
+        font-size: 18px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .app-works {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app-works:nth-child(1) {
+        gap: 50px;
+    }
+
+    .app-works h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .app-works h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .app-works:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .app-works p {
+        width: 80%;
+        font-size: 18px;
+        margin: 50px auto;
+    }
+
+    .app-works .phone {
+        width: 200px;
+        height: 450px;
+    }
+
+    .phone2 {
+        width: 500px;
+        height: 200px;
+    }
+    .flexbox-story .second p{
+        width: auto;
+        padding: 0px 20px 0px 15px;
+        font-size: 18px;
+    }
+    .flexbox-story .second h2{
+        font-size: 22px;
+    }
+    .customers .features-items{
+        justify-content: center;
+        align-items: center;
+    }
+    .customers  .heading{
+        width: 100%;
+    }
+   .customers .container{
+    width: 90%;
+   }
+ 
+    input{
+        width: 200px;
+    }
+    input[type="email"]{
+        width: 400px;
+    }
+    .textarea{
+        width: 400px;
+       
+    
+}
+.flexbox-form .first{
+    margin: 0px;
+    width: 90%;
+    padding: 0px 40px;
+}
+.flexbox-form .heading{
+    margin:0px;
+    text-align: start;
+    width: 100%;
+    font-size: 40px;
+}
+.flexbox-form .second{
+    margin-top: 100px;
+}
+.footer-container{
+    padding: 20px;
+
+}
+}
+@media (max-width: 520px) {
+    .phone2 {
+        width: 400px;
+        height: 200px;
+    }
+    input{
+        width: 190px;
+    }
+    input[type="email"]{
+        width: 380px;
+    }
+    .textarea{
+        width: 370px;
+    
+}
+
+    
+}
+@media (max-width:500px){
+    .flexbox-form .second{
+        margin: 100px 0px 0px 10px;
+}
+}
+@media (max-width: 424px) {
+    .phone2 {
+        width: 350px;
+        height: 170px;
+    }
+    .flexbox-form .second{
+        margin-top: 100px;
+    }
+    .app-works p {
+        width: 100%;
+    }
+    input{
+        width: 160px;
+    }
+    input[type="email"]{
+        width: 320px;
+    }
+    .textarea{
+        width: 330px;
+    
+}
+.secondbox .footer-flex:nth-child(1){
+    gap: 10px;
+}
+.secondbox h4{
+    font-size: 13px;
+    text-align: center;
+}
+}
+
+@media (max-width: 365px) {
+    .phone2 {
+        width: 320px;
+        height: 150px;
+    }
+    input{
+        width: 150px;
+    }
+    input[type="email"]{
+        width: 300px;
+    }
+    .textarea{
+        width: 300px;
+    
+}
+.flexbox-form .first{
+    padding: 0px 0px 0px 10px;
+}
+}
+
+@media (max-width:320px) {
+    .banner {
+        padding: 70px 5px 50px 20px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .app-works .phone {
+        width: 200px;
+        height: 450px;
+    }
+
+    .phone2 {
+        width: 300px;
+        height: 150px;
+    }
+}
